@@ -80,6 +80,31 @@ def add4():
 x = add4()
 print("Sum:", x)
 
+# more about functions
+def multiply(a,b):
+    result = a * b
+    return result
+def add_and_multiply(x, y, z):
+    
+# A stack diagram is a way to visualize what happens in memory when Python executes a program, especially when functions call other functions
+ def multiply(a, b):
+    result = a * b
+    return result
+def add_and_multiply(x, y, z):
+    sum_xy = x + y
+    final = multiply(sum_xy, z)
+    return final
+def main():
+    a = 2
+    b = 3
+    c = 4
+    total = add_and_multiply(a, b, c)
+    print("Total;", total)
+if __name__ == "main":
+    main()
+
+
+
 
 
 
